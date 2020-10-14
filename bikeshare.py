@@ -89,6 +89,7 @@ def load_data(city, month, day):
         df = df[df['day'] == day.title()]
     return df
 #definition of most common month function
+#another comment
 def common_month(df):
     df['month'] = df['Start Time'].dt.month_name()
     popular_month=df['month'].mode()[0]
