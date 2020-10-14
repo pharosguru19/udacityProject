@@ -94,6 +94,8 @@ def common_month(df):
     popular_month=df['month'].mode()[0]
     print('Most Popular Start Month:',popular_month)
 #definition of most common day function
+#add First comment
+#add Second comment
 def common_day(df):
     df['day'] = df['Start Time'].dt.day_name()
     popular_day=df['day'].mode()[0]
